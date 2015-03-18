@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AppInfo.cs" />
+    <Compile Include="IApplicationStoreProvider.cs" />
+    <Compile Include="ICommunicateProvider.cs" />
+    <Compile Include="IRequest.cs" />
+    <Compile Include="IResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IAppService.cs" />
+    <Compile Include="Service\IUserService.cs" />
+    <Compile Include="Store\IAppStore.cs" />
+    <Compile Include="Store\ISessionStore.cs" />
+    <Compile Include="Store\IUserStore.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

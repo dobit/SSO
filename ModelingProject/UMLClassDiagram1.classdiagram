@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1ebb2c41-1811-4a3d-8202-109d8378f731" name="UMLClassDiagram1" linkedPackageId="cf1c0dd0-39b9-41cb-a5b5-4a32e031c045" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c0148770-570b-4118-a574-dfcb598bff2e">
+      <profileInstance Id="780aa3bd-d8d7-4bd1-9147-881e6e9e7119" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ba77c785-fe30-4d76-9331-4095b49abeee">
+      <profileInstance Id="cd2fb1af-550d-44e5-8024-51e77a23a1e1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="3d18a177-f06f-4eb7-9952-549881619636" name="LFNet.SSO">
+        <elementDefinition Id="60d09d53-5594-4c76-9eb2-87e15bdac3e9" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <Interface Id="5ca3a315-9a95-446c-9960-b5d1750d2d4e" name="IAppManager" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="4ff6bdc6-5cfc-4062-86f0-39710ec8f5e4" />
+              <ownedOperations>
+                <operation Id="2d9faa2b-8bb8-4181-9ec1-ff632723edfa" name="Get" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7bc54e8f-2744-4443-9e13-9687a1f35f60" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="51a053db-d618-4689-915d-2587be4d651f" name="appId" direction="In">
+                        <elementDefinition Id="420fe040-a192-410a-a31e-00681eae4bcc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b1a562c5-1385-47d0-9644-6eed37477c45" LastKnownName="Guid" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="65a5e21f-9b6a-4652-989d-af6f025b1cfd" name="IUserManager" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="c1ee49ca-bd13-4ce1-88a1-4ddecbfa32c6" />
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="b1a562c5-1385-47d0-9644-6eed37477c45" name="Guid" isAbstract="false" isLeaf="false" cachedFullName="Guid">
+        <elementDefinition Id="d8c37654-e86a-45c0-be8b-7d50d9569cd2" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cf1c0dd0-39b9-41cb-a5b5-4a32e031c045" name="ModelingProject">
+    <elementDefinition Id="909f47a9-63ea-48c8-9de8-0ea90631ca1a" />
+  </package>
+</logicalClassDesignerModel>

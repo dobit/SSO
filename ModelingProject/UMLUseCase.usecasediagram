@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="c1145510-807d-4b85-9b29-5ae0cb6d51dd" name="UMLUseCase" linkedPackageId="f2b48043-3e22-4dde-956e-4204a30d2852" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="045aa961-d05a-4476-bbbb-d26cb7702abe">
+      <profileInstance Id="849d302c-d37f-4299-a68e-9df350c805d7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5fdfdc21-c5ca-4f59-8e72-d75ab7c3a1fe">
+      <profileInstance Id="8b36edf0-4cc9-404c-aac8-26c9da434565" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c3892762-1c09-4c4d-9756-ef2d42dee96a" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="182f6258-46c2-4c4c-9104-a846cd8eff84" />
+        <suppliersInternal>
+          <dependency Id="f93d82af-24bd-4e41-9a5f-3216f1dadefd">
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
+            <elementDefinition Id="f62f25f5-d9d1-45a6-a1c8-c996493b89d3" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2486e8fc-3a20-4fac-a5cf-d85158b63f3a" name="Actor2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3559b192-d99f-4a96-8b16-02d40bfa4707" />
+        <suppliersInternal>
+          <dependency Id="4674f12a-a1ba-4883-98ac-6be021b12d60">
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
+            <elementDefinition Id="bb040083-9fd2-4ee7-a5ce-942412dfcd0c" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="93ae3c0c-6294-4e3b-afad-3396b89ca4af" name="Actor3" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fe655a7c-57e6-4f89-8bc0-a7749198be98" />
+        <suppliersInternal>
+          <dependency Id="a34fd5ba-8937-4429-8875-3a744d7deea5">
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
+            <elementDefinition Id="67165bdd-8c4c-4077-866a-ad265104a9cb" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71594544-2e88-4e32-a6c4-2da4996d53df" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" name="登陆" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b" />
+        <subjects>
+          <subsystemMoniker Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" LastKnownName="Subsystem1" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f2b48043-3e22-4dde-956e-4204a30d2852" name="ModelingProject">
+    <elementDefinition Id="909f47a9-63ea-48c8-9de8-0ea90631ca1a" />
+  </package>
+</useCaseModelRoot>

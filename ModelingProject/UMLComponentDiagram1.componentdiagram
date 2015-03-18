@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="4643028a-ba15-4bf7-b59c-0912c4501131" name="UMLComponentDiagram1" linkedPackageId="f446aaf2-9963-4cbe-9762-07fd7c5d4ce3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6b462015-4bbc-4eb2-97c9-62420a362f4c">
+      <elementDefinition Id="3cbbddfe-fda2-4652-ab62-c265bd7eb060" />
+      <annotatedElements>
+        <componentMoniker Id="61b40cf2-c707-46dc-bdff-dae5e7993f87" LastKnownName="Component1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="39ac4a55-6bdc-4f06-90ee-31b9750aae1a">
+      <profileInstance Id="60d959f3-93f5-45fe-84eb-aa72fde0b0c7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cec1b925-106c-4a65-92c6-84b46c88afb7">
+      <profileInstance Id="cef3a187-a0b3-427e-8089-0c3088447c46" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="61b40cf2-c707-46dc-bdff-dae5e7993f87" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="967da762-7f71-4a29-a8fa-ee61109c96a1" />
+        <ownedAttributesInternal>
+          <providedInterface Id="4b5a9d97-d814-4ace-b190-b503eeb735b9" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <lowerValueInternal>
+              <literalString Id="68e42c8f-c966-4e3b-9317-7cc02d94fa26" name="Lower" value="1">
+                <elementDefinition Id="48804cd2-0c5f-40c9-bec6-d9f71b06b774" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="d62bdc3b-b7d7-4dee-b726-0b5a76941ce8" name="Upper" value="*">
+                <elementDefinition Id="aec4a17f-4ca8-44a0-aed8-26e3a5284666" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="e4124fef-99c2-4221-8da5-4e54ca954fc0" />
+            <type_NamedElement>
+              <interfaceMoniker Id="e0776306-8a16-4695-8070-8e0ea3cce9c2" LastKnownName="Interface1" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="e0776306-8a16-4695-8070-8e0ea3cce9c2" name="Interface1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ea8c6ac-e7af-46f1-83e5-f339fae2d3e8" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="f446aaf2-9963-4cbe-9762-07fd7c5d4ce3" name="ModelingProject">
+    <elementDefinition Id="909f47a9-63ea-48c8-9de8-0ea90631ca1a" />
+  </package>
+</componentModel>

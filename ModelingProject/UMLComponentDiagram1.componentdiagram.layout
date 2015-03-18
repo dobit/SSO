@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="4643028a-ba15-4bf7-b59c-0912c4501131" />
+  <nestedChildShapes>
+    <componentShape Id="44b2d647-8414-444b-a15b-bb92642c480e" absoluteBounds="5.78125, 1.875, 1.5, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="61b40cf2-c707-46dc-bdff-dae5e7993f87" LastKnownName="Component1" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="ac5c3717-6005-46e7-b72b-afb2f6ce94b9" absoluteBounds="6.90625, 2.825, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="4b5a9d97-d814-4ace-b190-b503eeb735b9" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+    <commentShape Id="91362c6c-3e93-4496-ad22-0172a7864cee" absoluteBounds="7.75, 2.375, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="6b462015-4bbc-4eb2-97c9-62420a362f4c" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(7.75 : 2.5625); (7.28125 : 2.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="91362c6c-3e93-4496-ad22-0172a7864cee" />
+        <componentShapeMoniker Id="44b2d647-8414-444b-a15b-bb92642c480e" />
+      </nodes>
+    </commentConnector>
+  </nestedChildShapes>
+</componentDiagram>
