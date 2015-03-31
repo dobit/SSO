@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="909f47a9-63ea-48c8-9de8-0ea90631ca1a"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -32,7 +32,7 @@
     <packageHasNamedElement>
       <actor
         Id="182f6258-46c2-4c4c-9104-a846cd8eff84"
-        name="Actor1"
+        name="Common User"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -40,7 +40,28 @@
             Id="f62f25f5-d9d1-45a6-a1c8-c996493b89d3">
             <useCaseMoniker
               Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b"
-              LastKnownName="登陆"
+              LastKnownName="login UI"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="8b757a61-f6a5-451b-ae07-ce7285fcf4f7">
+            <useCaseMoniker
+              Id="d41c4af8-ddf2-4e3a-9c35-13e411f274d3"
+              LastKnownName="Logout Action"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="6d8dc5d2-c9cd-441a-8252-6fc9170e583a">
+            <useCaseMoniker
+              Id="2a2a7091-bc6d-49f7-a42b-61d3a02d3456"
+              LastKnownName="logout link"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="01cb0d23-8232-4ca7-a675-8c510f4bea49">
+            <useCaseMoniker
+              Id="ad37f999-b6bc-46cb-9fbc-9f7fd732f021"
+              LastKnownName="Login Link"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -57,7 +78,7 @@
             Id="bb040083-9fd2-4ee7-a5ce-942412dfcd0c">
             <useCaseMoniker
               Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b"
-              LastKnownName="登陆"
+              LastKnownName="login UI"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -66,7 +87,7 @@
     <packageHasNamedElement>
       <actor
         Id="fe655a7c-57e6-4f89-8bc0-a7749198be98"
-        name="Actor3"
+        name="System Manager"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -74,7 +95,21 @@
             Id="67165bdd-8c4c-4077-866a-ad265104a9cb">
             <useCaseMoniker
               Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b"
-              LastKnownName="登陆"
+              LastKnownName="login UI"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="42e41956-55a7-4239-9294-b67d7c6de7da">
+            <useCaseMoniker
+              Id="d41c4af8-ddf2-4e3a-9c35-13e411f274d3"
+              LastKnownName="Logout Action"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="87b3d499-3ac9-4583-8ad8-383c66704e98">
+            <useCaseMoniker
+              Id="1fce2b8f-651a-47c6-9da9-cd48aef3ec88"
+              LastKnownName="application Manager UI"
               LastKnownLocation="ModelingProject.uml" />
           </dependency>
         </suppliersInternal>
@@ -83,7 +118,7 @@
     <packageHasNamedElement>
       <subsystem
         Id="71594544-2e88-4e32-a6c4-2da4996d53df"
-        name="Subsystem1"
+        name="Single sign on system"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -91,13 +126,13 @@
     <packageHasNamedElement>
       <useCase
         Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b"
-        name="登陆"
+        name="login UI"
         isAbstract="false"
         isLeaf="false">
         <subjects>
           <subsystemMoniker
             Id="71594544-2e88-4e32-a6c4-2da4996d53df"
-            LastKnownName="Subsystem1"
+            LastKnownName="Single sign on system"
             LastKnownLocation="ModelingProject.uml" />
         </subjects>
       </useCase>
@@ -291,22 +326,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="dea1a8e9-09b4-49a8-8530-4442d9364cd6"
-            name="MessageOccurrenceSpecification4">
-            <covered>
-              <lifelineMoniker
-                Id="3c448f5f-34e0-457e-aa6d-c93c9be7e038"
-                LastKnownName="用户"
-                LastKnownLocation="ModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="3808ff2b-7b85-47e9-a037-e29faa5d6869"
             name="MessageOccurrenceSpecification3">
             <covered>
               <lifelineMoniker
                 Id="74a7247e-247c-4c64-9679-74ad3b091f34"
                 LastKnownName="登录客户端"
+                LastKnownLocation="ModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dea1a8e9-09b4-49a8-8530-4442d9364cd6"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="3c448f5f-34e0-457e-aa6d-c93c9be7e038"
+                LastKnownName="用户"
                 LastKnownLocation="ModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -783,6 +818,156 @@
         Id="60d09d53-5594-4c76-9eb2-87e15bdac3e9"
         LastKnownName="LFNet.SSO"
         LastKnownLocation="Package_1639.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d41c4af8-ddf2-4e3a-9c35-13e411f274d3"
+        name="Logout Action"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="71594544-2e88-4e32-a6c4-2da4996d53df"
+            LastKnownName="Single sign on system"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="867d2e35-41fa-4c76-b81a-18a7fec4d6ef"
+        name="Manager System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1fce2b8f-651a-47c6-9da9-cd48aef3ec88"
+        name="application Manager UI"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="867d2e35-41fa-4c76-b81a-18a7fec4d6ef"
+            LastKnownName="Manager System"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="95e8b187-f6bd-47dd-8f60-31b0a291064f"
+        name="application System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ad37f999-b6bc-46cb-9fbc-9f7fd732f021"
+        name="Login Link"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="64abc819-bffb-46bf-baf3-7596778bab18"
+            isDerived="false"
+            sourceEndRoleName="Login Link"
+            targetEndRoleName="login UI"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b"
+              LastKnownName="login UI"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d02acedb-92a3-4f2b-b14e-93c9a53db927"
+                  name="Login Link"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cfb86be-6239-4a63-ab39-1cfc10e39916"
+                  name="login UI"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="95e8b187-f6bd-47dd-8f60-31b0a291064f"
+            LastKnownName="application System"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a2a7091-bc6d-49f7-a42b-61d3a02d3456"
+        name="logout link"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="95e8b187-f6bd-47dd-8f60-31b0a291064f"
+            LastKnownName="application System"
+            LastKnownLocation="ModelingProject.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3e9fcae6-9d91-49a1-ac97-f2457a4e412b"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="f9ccd3ce-fc2d-45d7-8311-217865d00888"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="82e0e9c7-e652-4dba-bf57-b5d71552afc8"
+                LastKnownName="Interface2"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="82e0e9c7-e652-4dba-bf57-b5d71552afc8"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

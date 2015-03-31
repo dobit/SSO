@@ -10,7 +10,7 @@ namespace LFNet.SSO
             
         }
 
-        public IList<TData> Data { get; private set; }
+        public IList<TData> Data { get;  set; }
 
         public long RecordNum { get; set; }
     }

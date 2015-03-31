@@ -1,6 +1,6 @@
 ﻿namespace LFNet.SSO.Store
 {
-    public interface IUserStore
+    public interface IUserPersistence
     {
          
     }

@@ -1,6 +1,6 @@
 ﻿namespace LFNet.SSO.Store
 {
-    public interface ISessionStore
+    public interface ISessionPersistence
     {
          
     }

@@ -1,68 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="c1145510-807d-4b85-9b29-5ae0cb6d51dd" name="UMLUseCase" linkedPackageId="f2b48043-3e22-4dde-956e-4204a30d2852" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="045aa961-d05a-4476-bbbb-d26cb7702abe">
-      <profileInstance Id="849d302c-d37f-4299-a68e-9df350c805d7" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5fdfdc21-c5ca-4f59-8e72-d75ab7c3a1fe">
-      <profileInstance Id="8b36edf0-4cc9-404c-aac8-26c9da434565" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="c1145510-807d-4b85-9b29-5ae0cb6d51dd" name="UMLUseCase" linkedPackageId="f2b48043-3e22-4dde-956e-4204a30d2852" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="c3892762-1c09-4c4d-9756-ef2d42dee96a" name="Actor1" isAbstract="false" isLeaf="false">
+      <actor Id="c3892762-1c09-4c4d-9756-ef2d42dee96a" name="Common User" isAbstract="false" isLeaf="false">
         <elementDefinition Id="182f6258-46c2-4c4c-9104-a846cd8eff84" />
         <suppliersInternal>
           <dependency Id="f93d82af-24bd-4e41-9a5f-3216f1dadefd">
-            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="login UI" />
             <elementDefinition Id="f62f25f5-d9d1-45a6-a1c8-c996493b89d3" />
           </dependency>
-        </suppliersInternal>
-      </actor>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <actor Id="2486e8fc-3a20-4fac-a5cf-d85158b63f3a" name="Actor2" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="3559b192-d99f-4a96-8b16-02d40bfa4707" />
-        <suppliersInternal>
-          <dependency Id="4674f12a-a1ba-4883-98ac-6be021b12d60">
-            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
-            <elementDefinition Id="bb040083-9fd2-4ee7-a5ce-942412dfcd0c" />
+          <dependency Id="4f1b44dd-c549-41fc-8e2a-328d4ccbb7fd">
+            <useCaseMoniker Id="30856767-0194-459d-8262-577ab8bbb082" LastKnownName="Logout Action" />
+            <elementDefinition Id="8b757a61-f6a5-451b-ae07-ce7285fcf4f7" />
+          </dependency>
+          <dependency Id="d39b19d6-2c72-4e4e-89f1-44462d63af70">
+            <useCaseMoniker Id="67f8648f-ba75-403d-a58f-f4f7943866c8" LastKnownName="logout link" />
+            <elementDefinition Id="6d8dc5d2-c9cd-441a-8252-6fc9170e583a" />
+          </dependency>
+          <dependency Id="a41adcce-90a3-4cba-8699-b889e94154ce">
+            <useCaseMoniker Id="f6b5e4ce-94f8-48a2-9e97-bc744535f5a0" LastKnownName="Login Link" />
+            <elementDefinition Id="01cb0d23-8232-4ca7-a675-8c510f4bea49" />
           </dependency>
         </suppliersInternal>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="93ae3c0c-6294-4e3b-afad-3396b89ca4af" name="Actor3" isAbstract="false" isLeaf="false">
+      <actor Id="93ae3c0c-6294-4e3b-afad-3396b89ca4af" name="System Manager" isAbstract="false" isLeaf="false">
         <elementDefinition Id="fe655a7c-57e6-4f89-8bc0-a7749198be98" />
         <suppliersInternal>
           <dependency Id="a34fd5ba-8937-4429-8875-3a744d7deea5">
-            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="登陆" />
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="login UI" />
             <elementDefinition Id="67165bdd-8c4c-4077-866a-ad265104a9cb" />
+          </dependency>
+          <dependency Id="bfe1f44b-457e-4990-8238-655566c614f6">
+            <useCaseMoniker Id="30856767-0194-459d-8262-577ab8bbb082" LastKnownName="Logout Action" />
+            <elementDefinition Id="42e41956-55a7-4239-9294-b67d7c6de7da" />
+          </dependency>
+          <dependency Id="021b2d7c-dc6b-4782-96ac-2f21e156daec">
+            <useCaseMoniker Id="6846c423-12f2-49a6-a366-42252548e742" LastKnownName="application Manager UI" />
+            <elementDefinition Id="87b3d499-3ac9-4583-8ad8-383c66704e98" />
           </dependency>
         </suppliersInternal>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <subsystem Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <subsystem Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" name="Single sign on system" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="71594544-2e88-4e32-a6c4-2da4996d53df" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" name="登陆" isAbstract="false" isLeaf="false">
+      <useCase Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" name="login UI" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8a6b695b-72e3-4cd2-b366-9d326d884a8b" />
         <subjects>
-          <subsystemMoniker Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" LastKnownName="Subsystem1" />
+          <subsystemMoniker Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" LastKnownName="Single sign on system" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="30856767-0194-459d-8262-577ab8bbb082" name="Logout Action" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d41c4af8-ddf2-4e3a-9c35-13e411f274d3" />
+        <subjects>
+          <subsystemMoniker Id="b6774823-4e36-4fc8-aa80-dfc5dbbb4e78" LastKnownName="Single sign on system" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="139c0831-0043-40b7-b55a-58269d97a897" name="Manager System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="867d2e35-41fa-4c76-b81a-18a7fec4d6ef" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="6846c423-12f2-49a6-a366-42252548e742" name="application Manager UI" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1fce2b8f-651a-47c6-9da9-cd48aef3ec88" />
+        <subjects>
+          <subsystemMoniker Id="139c0831-0043-40b7-b55a-58269d97a897" LastKnownName="Manager System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="87f6688c-96aa-475b-91a7-c05ce1848626" name="application System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="95e8b187-f6bd-47dd-8f60-31b0a291064f" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f6b5e4ce-94f8-48a2-9e97-bc744535f5a0" name="Login Link" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad37f999-b6bc-46cb-9fbc-9f7fd732f021" />
+        <targetEnds>
+          <association Id="f3a3470b-69ef-4acb-8e44-74648b2f20ac" isDerived="false" sourceEndRoleName="Login Link" targetEndRoleName="login UI" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="00d1f29f-1341-4703-aaa0-240e7e1c0762" LastKnownName="login UI" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d80ee22a-0225-4df1-b2a4-5b0684c69dff" name="Login Link" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d02acedb-92a3-4f2b-b14e-93c9a53db927" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7eba62c-25f6-41bd-894e-264eccb33a1a" name="login UI" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cfb86be-6239-4a63-ab39-1cfc10e39916" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="64abc819-bffb-46bf-baf3-7596778bab18" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="87f6688c-96aa-475b-91a7-c05ce1848626" LastKnownName="application System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="67f8648f-ba75-403d-a58f-f4f7943866c8" name="logout link" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a2a7091-bc6d-49f7-a42b-61d3a02d3456" />
+        <subjects>
+          <subsystemMoniker Id="87f6688c-96aa-475b-91a7-c05ce1848626" LastKnownName="application System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="f2b48043-3e22-4dde-956e-4204a30d2852" name="ModelingProject">
     <elementDefinition Id="909f47a9-63ea-48c8-9de8-0ea90631ca1a" />
+    <profileInstances>
+      <packageHasProfileInstances Id="045aa961-d05a-4476-bbbb-d26cb7702abe">
+        <profileInstance Id="849d302c-d37f-4299-a68e-9df350c805d7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5fdfdc21-c5ca-4f59-8e72-d75ab7c3a1fe">
+        <profileInstance Id="8b36edf0-4cc9-404c-aac8-26c9da434565" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
